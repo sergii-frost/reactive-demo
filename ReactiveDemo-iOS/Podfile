@@ -1,0 +1,18 @@
+platform :ios, "6.1"
+
+#Basic cocoapods used almost in all projects
+pod 'AFNetworking', '~> 2.1'
+pod 'TSMessages', '0.9.6'
+pod 'AHAlertView', '0.0.2'
+pod 'UIActionSheet+Blocks', '~> 0.8.1'
+
+#Some special new cocoapods to demo stuff for
+pod 'ReactiveCocoa', '2.3.1'
+pod 'ObjectiveSugar', '0.9'
+pod 'PonyDebugger', '~> 0.3.1'
+
+target :'ReactiveDemo-iOSTests', :exclusive => true do
+    pod 'Specta',   '~> 0.2.1'
+    pod 'Expecta',  '~> 0.3.0'
+	pod 'OCMock',   '2.2.3'
+end
