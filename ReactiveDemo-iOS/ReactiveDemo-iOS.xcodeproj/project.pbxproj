@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E81843E91094137A5206C27 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A14CEF931AE8468695C3FE3F /* libPods.a */; };
+		224F3A7E193F64C100C6A984 /* FDTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224F3A7D193F64C100C6A984 /* FDTextViewController.m */; };
 		22A452A71939D24F00007F90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A452A61939D24F00007F90 /* Foundation.framework */; };
 		22A452A91939D25000007F90 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A452A81939D25000007F90 /* CoreGraphics.framework */; };
 		22A452AB1939D25000007F90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A452AA1939D25000007F90 /* UIKit.framework */; };
@@ -25,7 +26,6 @@
 		22A452DF193BA08900007F90 /* FDCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A452DE193BA08900007F90 /* FDCar.m */; };
 		22A452E0193BA09100007F90 /* FDCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A452DE193BA08900007F90 /* FDCar.m */; };
 		22C4B5D3193BA1C000DD7370 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 22C4B5D2193BA1C000DD7370 /* Podfile */; };
-		C205B3B3FB504BBBBD47F988 /* libPods-ReactiveDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8B38AAF46D4F42BB27FA21 /* libPods-ReactiveDemoTests.a */; };
 		F0482AC2F56449248861B8C5 /* libPods-ReactiveDemo-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE64B7D4BDB4D79B8B2399D /* libPods-ReactiveDemo-iOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +42,8 @@
 /* Begin PBXFileReference section */
 		182C0D0AF04D49398EF689E1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		198B13DAF4F24F5A8686E00C /* Pods-ReactiveDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDemoTests.xcconfig"; path = "Pods/Pods-ReactiveDemoTests.xcconfig"; sourceTree = "<group>"; };
+		224F3A7C193F64C100C6A984 /* FDTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTextViewController.h; sourceTree = "<group>"; };
+		224F3A7D193F64C100C6A984 /* FDTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTextViewController.m; sourceTree = "<group>"; };
 		22A452A31939D24F00007F90 /* ReactiveDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactiveDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A452A61939D24F00007F90 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22A452A81939D25000007F90 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,7 +65,7 @@
 		22A452D11939D25000007F90 /* ReactiveDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveDemoTests.m; sourceTree = "<group>"; };
 		22A452DD193BA08900007F90 /* FDCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCar.h; sourceTree = "<group>"; };
 		22A452DE193BA08900007F90 /* FDCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCar.m; sourceTree = "<group>"; };
-		22C4B5D2193BA1C000DD7370 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		22C4B5D2193BA1C000DD7370 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6EE64B7D4BDB4D79B8B2399D /* libPods-ReactiveDemo-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveDemo-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14CEF931AE8468695C3FE3F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3740AD9C6A8438A8F0504D4 /* Pods-ReactiveDemo-iOSTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveDemo-iOSTests.xcconfig"; path = "Pods/Pods-ReactiveDemo-iOSTests.xcconfig"; sourceTree = "<group>"; };
@@ -89,7 +91,6 @@
 				22A452C61939D25000007F90 /* XCTest.framework in Frameworks */,
 				22A452C81939D25000007F90 /* UIKit.framework in Frameworks */,
 				22A452C71939D25000007F90 /* Foundation.framework in Frameworks */,
-				C205B3B3FB504BBBBD47F988 /* libPods-ReactiveDemoTests.a in Frameworks */,
 				F0482AC2F56449248861B8C5 /* libPods-ReactiveDemo-iOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +146,8 @@
 				22A452BC1939D25000007F90 /* FDViewController.m */,
 				22A452BE1939D25000007F90 /* Images.xcassets */,
 				22A452AD1939D25000007F90 /* Supporting Files */,
+				224F3A7C193F64C100C6A984 /* FDTextViewController.h */,
+				224F3A7D193F64C100C6A984 /* FDTextViewController.m */,
 			);
 			path = "ReactiveDemo-iOS";
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				22A452B71939D25000007F90 /* FDAppDelegate.m in Sources */,
 				22A452B31939D25000007F90 /* main.m in Sources */,
 				22A452DF193BA08900007F90 /* FDCar.m in Sources */,
+				224F3A7E193F64C100C6A984 /* FDTextViewController.m in Sources */,
 				22A452BD1939D25000007F90 /* FDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,19 +513,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B3740AD9C6A8438A8F0504D4 /* Pods-ReactiveDemo-iOSTests.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReactiveDemo.app/ReactiveDemo";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReactiveDemo-iOS.app/ReactiveDemo-iOS";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ReactiveDemo/ReactiveDemo-Prefix.pch";
+				GCC_PREFIX_HEADER = "ReactiveDemo-iOS/ReactiveDemo-iOS-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "ReactiveDemoTests/ReactiveDemo-iOSTests-Info.plist";
+				INFOPLIST_FILE = "ReactiveDemo-iOSTests/ReactiveDemo-iOSTests-Info.plist";
 				PRODUCT_NAME = "ReactiveDemo-iOSTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -532,15 +536,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B3740AD9C6A8438A8F0504D4 /* Pods-ReactiveDemo-iOSTests.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReactiveDemo.app/ReactiveDemo";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReactiveDemo-iOS.app/ReactiveDemo-iOS";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ReactiveDemo/ReactiveDemo-Prefix.pch";
-				INFOPLIST_FILE = "ReactiveDemoTests/ReactiveDemo-iOSTests-Info.plist";
+				GCC_PREFIX_HEADER = "ReactiveDemo-iOS/ReactiveDemo-iOS-Prefix.pch";
+				INFOPLIST_FILE = "ReactiveDemo-iOSTests/ReactiveDemo-iOSTests-Info.plist";
 				PRODUCT_NAME = "ReactiveDemo-iOSTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

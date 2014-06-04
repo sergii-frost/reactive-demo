@@ -33,6 +33,8 @@
     //
     // Step 1: Simple RAC Signal
     //
+
+    //RED signal
     RACSignal *redSignal = [_redSlider rac_signalForControlEvents:UIControlEventValueChanged];
     
     redSignal = [[redSignal map:^id(UISlider *slider) {
@@ -44,9 +46,10 @@
         [_redLabel setTextColor:[UIColor colorWithRed:1.0f green:colorDensity blue:colorDensity alpha:1.0f]];
         _redLabel.text = x.stringValue;
     }];
-    
+
     
 
+    //GREEN Signal
     RACSignal *greenSignal = [_greenSlider rac_signalForControlEvents:UIControlEventValueChanged];
     
     greenSignal = [[greenSignal map:^id(UISlider *slider) {
@@ -59,6 +62,8 @@
     }];
     
     
+    
+    //BLUE Signal
     RACSignal *blueSignal = [_blueSlider rac_signalForControlEvents:UIControlEventValueChanged];
     
     blueSignal = [[blueSignal map:^id(UISlider *slider) {
@@ -77,7 +82,7 @@
     
     RACSignal *allColorsSignal = [RACSignal
         combineLatest:@[redSignal, greenSignal, blueSignal]
-        reduce:^id(UISlider *red, UISlider *green, NSNumber *blue){
+        reduce:^id(NSNumber *red, NSNumber *green, NSNumber *blue){
             return @{@"red":red, @"green":green, @"blue":blue};
         }];
  
@@ -93,7 +98,7 @@
     _redSlider.value = 255;
     _greenSlider.value = 255;
     _blueSlider.value = 255;
-    
+
     [_redSlider sendActionsForControlEvents:UIControlEventValueChanged];
     [_greenSlider sendActionsForControlEvents:UIControlEventValueChanged];
     [_blueSlider sendActionsForControlEvents:UIControlEventValueChanged];
