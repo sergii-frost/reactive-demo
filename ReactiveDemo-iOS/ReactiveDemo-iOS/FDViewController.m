@@ -39,7 +39,7 @@
             return @((int) (slider.value + 0.5));
         }] distinctUntilChanged];
     
-    [redSignal doNext:^(NSNumber *x) {
+    [redSignal subscribeNext:^(NSNumber *x) {
         CGFloat colorDensity = 1 - x.integerValue/255.0f;
         [_redLabel setTextColor:[UIColor colorWithRed:1.0f green:colorDensity blue:colorDensity alpha:1.0f]];
         _redLabel.text = x.stringValue;
